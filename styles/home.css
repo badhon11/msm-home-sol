@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection{
+    background-color: pink;
+}
+
+::selection{
+    background-color: palevioletred;
+}
+
+
+.intro-container{
+    /* width: 80%; */
+    background-image: url("/assets/banner-bg-1.jpeg");
+    /* background-blend-mode: darken; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro {
+    
+    width: 80%;
+    padding: 60px;
+    color: white;
+}
+
+.intro h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.intro h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
