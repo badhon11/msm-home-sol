@@ -14,7 +14,7 @@
 
 
 .banner{
-    background-image: url(/assets/about-banner-4.jpg), url(/assets/dark-gray.jpg);
+    background-image: url(../assets/about-banner-4.jpg), url(../assets/dark-gray.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
     background-size: cover;

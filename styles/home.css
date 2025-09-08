@@ -18,7 +18,7 @@ html {
 
 .intro-container{
     /* width: 80%; */
-    background-image: url("/assets/banner-bg-1.jpeg");
+    background-image: url("../assets/banner-bg-1.jpeg");
     /* background-blend-mode: darken; */
     background-size: cover;
     /* background-repeat: no-repeat; */
