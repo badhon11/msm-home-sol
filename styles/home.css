@@ -53,6 +53,28 @@ html {
     text-transform: capitalize;
 }
 
+@media screen and (max-width: 900px) {
+    .intro h2 {
+        font-size: 3em;
+    }
+
+    .intro h6 {
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 510px) {
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .intro h6 {
+        font-size: 14px;
+    }
+    
+}
+
 /* home about  */
 
 section.about-section{
