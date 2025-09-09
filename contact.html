@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSM CONTANCT</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,22 +18,34 @@
 
 
 </head>
+
 <body>
 
     <header>
-        <div class="navigation">
-            <nav>
-                <div class="logo"><a href="index.html">MSM Home Solution</a></div>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-    
-            </nav>
-        </div> 
+        <nav>
+            <input type="checkbox" name="" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"
+                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                </svg>
+            </label>
+
+            <label id="overlay" for="sidebar-active"></label>
+
+            <div class="links-container">
+                
+
+                <a class="home-link" href="index.html">MSM Home Solution</a>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -46,33 +59,37 @@
             <div class="form-container">
                 <h2 class="form-h2">Send Us A Message</h2>
                 <p class="form-p">
-                    Reach our Tampa team for quick, secure property preservation services. Call or email for a fast quote, 24/7 emergency support, and reliable lender-focused solutions today.
+                    Reach our Tampa team for quick, secure property preservation services. Call or email for a fast
+                    quote, 24/7 emergency support, and reliable lender-focused solutions today.
                 </p>
                 <br>
                 <p class="form-pp"><span class="fa fa-clock-o"></span>Regular Timings : 9:00 a.m to 11:00 p.m</p>
-                <p class="form-pp"><span class = "fa fa-map-marker"></span>1230 East Fowler Ave, Tampa, FL 33612</p>
+                <p class="form-pp"><span class="fa fa-map-marker"></span>1230 East Fowler Ave, Tampa, FL 33612</p>
                 <br>
                 <form action="#" method="post">
                     <div class="form-group">
                         <!-- <label for="name">Name:</label> -->
                         <!-- <i class="fa fa-user" style="font-size: 18px;"></i> -->
-                        <input class="form-input" type="text" id="name" name="name" style="width: 100%; border: 2px solid #d10f56; border-radius: 10px; padding: 10px 15px; margin-bottom: 5px;" placeholder="Name" required>
+                        <input class="form-input" type="text" id="name" name="name"
+                            style="width: 100%; border: 2px solid #d10f56; border-radius: 10px; padding: 10px 15px; margin-bottom: 5px;"
+                            placeholder="Name" required>
                     </div>
                     <div class="form-group">
                         <!-- <label for="email">Email:</label> -->
                         <!-- <i class="fa fa-envelope" style="position: absolute; left: 10px; top: 50%; transform: translateY(-70%); color: #aaa; pointer-events: none;"></i> -->
-                        <input class="form-input" type="email" id="email" name="email" placeholder="Email" required >
+                        <input class="form-input" type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
                         <!-- <label for="message">Message:</label> -->
-                        <textarea class="form-input" id="message" name="message" rows="7" placeholder="Message" required></textarea>
+                        <textarea class="form-input" id="message" name="message" rows="7" placeholder="Message"
+                            required></textarea>
                     </div>
                     <button class="form-button" type="submit">SUBMIT</button>
                 </form>
             </div>
         </section>
 
-        
+
     </main>
 
     <footer>
@@ -83,19 +100,22 @@
                         Company Overview
                     </h5>
                     <p>
-                        With a commitment to excellence and customer satisfaction, we strive to deliver premium quality and innovative solutions tailored to meet your needs.
+                        With a commitment to excellence and customer satisfaction, we strive to deliver premium quality
+                        and innovative solutions tailored to meet your needs.
                     </p>
                 </div>
-                
+
                 <div class="footer-contact">
                     <h5>Contact</h5>
                     <ul class="contact-list">
-                        <li><span class="glyphicon glyphicon-map-marker"></span><a href="#">1230 East Fowler Ave, Tampa, FL 33612</a></li>
+                        <li><span class="glyphicon glyphicon-map-marker"></span><a href="#">1230 East Fowler Ave, Tampa,
+                                FL 33612</a></li>
                         <li><span class="glyphicon glyphicon-earphone"></span><a href="#">999 673 984</a></li>
-                        <li><span class="glyphicon glyphicon-envelope"></span><a href="#">support@yourdomain.com</a></li>
+                        <li><span class="glyphicon glyphicon-envelope"></span><a href="#">support@yourdomain.com</a>
+                        </li>
                     </ul>
                 </div>
-    
+
                 <div class="footer-services">
                     <h5>
                         Services
@@ -107,7 +127,7 @@
                     </ul>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="footer-copyright">
@@ -117,14 +137,16 @@
                 </p>
 
                 <ul>
-                    <li><a href="#"><i class="fa fa-facebook-square" style="font-size: 36px; color:#d10f56;"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook-square" style="font-size: 36px; color:#d10f56;"></i></a>
+                    </li>
                     <li><a href=""><i class="fa fa-twitter-square" style="font-size:36px; color:#d10f56;"></i></a></li>
                     <li><a href=""><i class="fa fa-linkedin-square" style="font-size:36px; color:#d10f56;"></i></a></li>
                 </ul>
             </div>
-            
+
         </div>
     </footer>
 
 </body>
+
 </html>
