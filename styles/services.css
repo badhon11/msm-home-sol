@@ -1,19 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
-::-moz-selection{
+::-moz-selection {
     background-color: pink;
 }
 
-::selection{
+::selection {
     background-color: palevioletred;
 }
 
 
-.banner{
+.banner {
     background-image: url(../assets/service-banner.jpg), url(../assets/dark-gray.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
@@ -25,54 +26,84 @@
 }
 
 
-.service-banner{
-    display: flex; flex-direction: column; justify-content: center; width: 80%;
+.service-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
 }
 
-.service-banner>h1{
+.service-banner>h1 {
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 50px;
     font-weight: 500;
 }
 
-.serve-intro{
-    display: flex;
-    justify-content:center;
+@media screen and (max-width: 920px) {
+    .service-banner>h1 {
+        font-size: 40px;
+    }
+    
 }
 
-.serve-intro-div{
+@media screen and (max-width: 680px) {
+    .service-banner>h1 {
+        font-size: 30px;
+    }
+    .banner{
+        min-height: 400px;
+    }
+}
+
+.serve-intro {
+    display: flex;
+    justify-content: center;
+}
+
+.serve-intro-div {
     padding: 70px 0;
     width: 75%;
 }
 
-.serve-intro-div>p{
+.serve-intro-div>p {
     text-align: center;
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 1.8;
 }
 
-.serve-intro-div>h2{
+.serve-intro-div>h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.service-cards{
+@media screen and (max-width: 680px) {
+    .serve-intro-div {
+        padding: 10px 0;
+    }
+
+    .serve-intro-div>h2 {
+        font-size: 28px;
+    }
+    
+}
+
+.service-cards {
     display: flex;
     justify-content: center;
 }
 
-.service-cards-grid{
+.service-cards-grid {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
 }
 
-.service-card-item{
+.service-card-item {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -82,12 +113,12 @@
     transition: background-color 0.5s;
 }
 
-.service-card-item:hover{
+.service-card-item:hover {
     background-color: #272727;
     color: white;
 }
 
-.service-icon{
+.service-icon {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -98,47 +129,60 @@
     margin-bottom: 10px;
 }
 
-.service-icon>i{
+.service-icon>i {
     font-size: 37px;
     color: #d10f56;
 }
 
-.service-card-despript{
+.service-card-despript {
     display: flex;
     flex-direction: column;
     align-content: center;
     margin-bottom: 60px;
 }
 
-.service-descript-align{
+.service-descript-align {
     text-align: center;
 }
 
-.service-card-despript>h4{
+.service-card-despript>h4 {
     font-size: 18px;
     font-weight: 600;
 }
 
-.service-card-despript>p{
+.service-card-despript>p {
     font-size: 16px;
     line-height: 1.6;
 }
 
+@media screen and (max-width: 920px) {
+    .service-cards-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-card-despript {
+        margin-bottom: 20px;
+    }
+    
+}
+
 /* accordion */
 
-.faq-grid{
+.faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     padding: 60px 0;
+    margin: 0 20px;
 }
 
-.faq-h2{
+.faq-h2 {
     font-size: 32px;
     text-align: center;
 }
 
-.faq-p{
+.faq-p {
     font-size: 16px;
     text-align: center;
 }
@@ -146,19 +190,19 @@
 .accordion {
     max-width: 100%;
     margin: auto;
-  }
+}
 
-  .accordion-item {
+.accordion-item {
     border: 1px solid #ccc;
     border-radius: 12px;
     margin-bottom: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
     background: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
 
-  .accordion-header {
+.accordion-header {
     display: flex;
     align-items: center;
     padding: 14px 20px;
@@ -169,37 +213,55 @@
     transition: background-color 0.3s ease;
     background-color: #fff;
     color: #000;
-  }
+}
 
-  .accordion-header.active {
+.accordion-header.active {
     background-color: #272727;
     color: #fff;
-  }
+}
 
-  .accordion-icon {
+.accordion-icon {
     font-size: 24px;
     color: #d10f56;
-    margin-right: 12px; /* space between icon and text */
+    margin-right: 12px;
+    /* space between icon and text */
     flex-shrink: 0;
     transition: transform 0.3s ease;
-  }
+}
 
-  .accordion-content {
+.accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 0.3s ease;
     padding: 0 20px;
     background: #fff;
-  }
+}
 
-  .accordion-content p {
+.accordion-content p {
     /* margin: 15px 0; */
     padding: 0 15px 15px 5px;
     color: #000;
     font-weight: 500;
     line-height: 1.8;
-  }
+}
 
-  .accordion-content.show {
+.accordion-content.show {
     padding: 15px 20px;
-  }
+}
+
+.faq{
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 920px) {
+    .faq-grid {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    .faq-h2 {
+        font-size: 28px;
+    }
+    
+}
