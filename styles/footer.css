@@ -21,11 +21,7 @@ footer {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-}
-
-.footer-company {
-    padding-right: 20px;
+    column-gap: 30px;
 }
 
 .footer-company>h5 {
@@ -99,14 +95,6 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
-
-    /* .footer-company {
-        text-align: center;
-    }
-
-    .footer-contact{
-        text-align: center;
-    } */
     
 }
 
@@ -139,4 +127,17 @@ footer {
 
 .copy-container>ul>li>a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .copy-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copy-container>ul {
+        justify-content: center;
+    }
+    
 }

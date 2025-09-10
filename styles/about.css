@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 ::-moz-selection{
@@ -31,7 +35,7 @@
 
 .about-banner>h1{
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 50px;
     font-weight: 500;
 }
@@ -47,6 +51,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 90px;
+}
+
+@media screen and (max-width: 920px) {
+    .vision-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .vision-pics{
@@ -91,7 +103,7 @@
 
 .vision-descript>p{
     color: black;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 16px;
     padding-right: 40px;
     line-height: 1.6;
@@ -111,13 +123,28 @@
     margin: 60px 0;
 }
 
+@media screen and (max-width: 920px) {
+    .professional-team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+    }
+
+    .team-overview{
+        margin-bottom: 32px;
+    }
+    
+}
+
 .team-overview{
     grid-column: 1/6;
 }
 
 .team-overview>h1{
     color:black;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font: size 44px;
     margin-bottom: 10px;
 }
@@ -125,7 +152,7 @@
 .team-overview>p{
     padding-right: 20px;
     color: black;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 16px;
     line-height: 1.6;
 }
@@ -137,7 +164,7 @@
     background-color: #d10f56;
     border: 1px solid transparent;
     color: #fff;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
     font-size: 11px;
     font-weight: 600;
     transition: background-color, .3s;
@@ -154,15 +181,29 @@
     grid-column: 6/13;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-content: center;
     /* column-gap: 5px; */
 }
 
-.member-pic{
-    height: 190px;
-    width: 200px;
+.team-members>img{
+    border-radius: 50%;
+}
+
+.team-members>img{
+    /* height: 190px;
+    width: 200px; */
+    width: 90%;
+    height: auto;
     margin: 5px;
 }
 
-.member-pic:hover{
+.team-members>img:hover{
     border: 2px solid #d10f56;
+}
+
+@media screen and (max-width: 680px) {
+    .vision{
+        margin-bottom: 0;
+    }
+    
 }
