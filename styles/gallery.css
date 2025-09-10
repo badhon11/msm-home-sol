@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -30,9 +33,22 @@
 
 .service-banner>h1{
     color: #fff;
-    /* font-family: "Montserrat", sans-serif; */
     font-size: 50px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 920px) {
+    .service-banner>h1{
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    .service-banner>h1{
+        font-size: 30px;
+    }
+    
 }
 
 .photo-gallery{
@@ -88,4 +104,42 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .title-text>h2{
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 920px) {
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title-text>h2{
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title-text>h2{
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .title-text>h2{
+        font-size: 18px;
+    }
+    
 }
